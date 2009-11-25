@@ -25,6 +25,10 @@ def ok_failed(condition)
   end
 end
 
+desc "default deploy task"
+task :deploy => :deploy_rsync
+  puts ">>> Deploying site with rsync <<<"
+
 desc "generate website in output directory"
 task :default => [:generate_site, :generate_style] do
   puts ">>> Site Generating Complete! <<<\n\n"
