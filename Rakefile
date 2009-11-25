@@ -25,9 +25,10 @@ def ok_failed(condition)
   end
 end
 
+## if you're deploying with github, change the default deploy to deploy_github
 desc "default deploy task"
-task :deploy => :deploy_rsync
-  puts ">>> Deploying site with rsync <<<"
+task :deploy => :deploy_rsync do
+end
 
 desc "generate website in output directory"
 task :default => [:generate_site, :generate_style] do
