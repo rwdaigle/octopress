@@ -1,13 +1,13 @@
 require 'active_support'
 
-site_url  = "http://yoursite.com"   # deployed site url for sitemap.xml generator
+site_url  = "http://octopress.org"   # deployed site url for sitemap.xml generator
 port      = "4000"     # preview project port eg. http://localhost:4000
 site      = "site"     # compiled site directory
 source    = "source" # source file directory
 
 ## -- Rsync Deploy config -- ##
-ssh_user      = "user@host.com"    # for rsync deployment
-document_root = "~/document_root/" # for rsync deployment
+ssh_user      = "mathisweb@octopress.org"    # for rsync deployment
+document_root = "~/octopress.org/" # for rsync deployment
 ## ---- ##
 
 ## -- Github Pages deploy config -- ##
